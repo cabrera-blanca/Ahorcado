@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Icons-->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <!--CSS-->
+        <link rel="stylesheet" href="../style/main.css">
+        <link rel="stylesheet" href="../style/game.css">
+        <title>Ahorcado</title>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="../media/logo.png" alt="logo">
+            </div>
+        </header>
+        <!--Iniciar Juego-->
+        <main>
+            <!--Horca-->
+            <div class="hombre-ahorcado">
+                <img id="hombre" alt="hombre-ahorcado" />
+              </div>
+              <div class="adivinado"></div>
+              <div class="errado"></div>
+            </div>
+            <!--Botones-->
+            <div class="botones" id="juego-btn">
+                <button id="game-btn" class="btn-dark" onclick="nuevoJuego()">
+                    NUEVO JUEGO
+                </button>
+                <a href="../index.html">
+                    <button id="desistir-btn">
+                        DESISTIR
+                    </button>
+                </a>
+            </div>
+        </main>
+        <footer>
+            <p>Developed by Lucia Cabrera</p>
+            <i class='bx bxl-github'></i>
+            <i class='bx bxl-linkedin-square' ></i>
+        </footer>
+        <!--JS-->
+        <script src="../app/main.js"></script>
+        <script src="../app/game.js"></script>
+    </body>
+</html>

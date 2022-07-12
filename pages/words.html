@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Icons-->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <!--CSS-->
+        <link rel="stylesheet" href="../style/main.css">
+        <title>Agrega palabras</title>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="../media/logo.png" alt="logo">
+            </div>
+        </header>
+        <!--Agregar palabras-->
+        <main>
+            <div id="canvas-container">
+                
+                <input class="textarea" type="text" pattern="^[A-Z]+$" maxlength="8"  id="nuevaPalabra"  placeholder="Ingrese una palabra">
+            </div>
+            
+            
+            <p id="alert">
+                <i class='bx bx-info-circle'></i>
+                Max. 8 letras
+            </p>
+            <div class="botones" id="palabras-btn">
+            
+                <button id="guardar-btn"  class="btn-dark" type="button" >
+                    Guardar y Empezar juego
+                </button>
+                
+                <a href="../index.html">
+                    <button id="cancelar-btn">
+                        Cancelar
+                    </button>
+                </a>
+            </div>
+        </main>
+        <footer>
+            <p>Developed by Lucia Cabrera</p>
+            <i class='bx bxl-github'></i>
+            <i class='bx bxl-linkedin-square' ></i>
+        </footer>
+        <!--JS-->
+        <script src="../app/game.js"></script>        
+    </body>
+</html>
